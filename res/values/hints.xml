@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="interest_input_hint">ex. 2.45</string>
+    <string name="calculate_mode_hint">Select Down Payment Mode</string>
+    <string name="calculation_mode_fixed_text">Fixed</string>
+    <string name="calculation_mode_percent_text">Percent</string>
+</resources>

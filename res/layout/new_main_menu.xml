@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@drawable/ponrodblack">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="300dp"
+            android:layout_height="300dp" android:layout_centerInParent="true">
+            <Button
+                android:id="@+id/btnBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/brandevent" android:hapticFeedbackEnabled="true"/>
+            <Button
+                android:id="@+id/btnPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/priceevent" android:layout_below="@id/btnBrand" android:hapticFeedbackEnabled="true"/>
+
+            <Button
+                android:id="@+id/btnFixedMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnPrice"
+                android:text="Enter new ui"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnFixedMode"
+                android:layout_alignBottom="@+id/btnFixedMode"
+                android:layout_toRightOf="@+id/btnFixedMode"
+                android:text="Summary" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

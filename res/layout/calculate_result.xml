@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:addStatesFromChildren="false" android:background="@color/black">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="@color/black">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:background="@color/black">
+
+                <LinearLayout
+                    android:id="@+id/brandSelectedLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/brandModelResult"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Car brand"
+                        android:textAppearance="?android:attr/textAppearanceLarge" android:gravity="center"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/leaseLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/brandSelectedLayout" android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" android:gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/carPreviewResult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/none" />
+
+                        <TextView
+                            android:id="@+id/priceTextResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dip"
+                            android:background="#AAFF6600"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="000000 Baht / month"
+                            android:textColor="#ffffffff" android:padding="12dip" android:textStyle="bold" android:textSize="20dip"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/leaseLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_below="@id/leaseLayout" android:gravity="center">
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/detailResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#AA66FFFF"
+                            android:padding="12dip"
+                            android:text="Details"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/totalPaymentResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#AACCCCCC"
+                            android:padding="12dip"
+                            android:text="Total payment"
+                            android:textColor="@color/white"
+                            android:textSize="15dip" android:layout_below="@id/detailResult" android:gravity="center" android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/modelResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/totalPaymentResult"
+                            android:background="#AA999999"
+                            android:padding="12dip"
+                            android:text="Model"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/priceResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/modelResult"
+                            android:background="#AACCCCCC"
+                            android:padding="12dip"
+                            android:text="Price"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/downPaymentResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/priceResult"
+                            android:background="#AA999999"
+                            android:padding="12dip"
+                            android:text="DownPayment"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/monthResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/downPaymentResult"
+                            android:background="#AACCCCCC"
+                            android:padding="12dip"
+                            android:text="Total month"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/interestResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/monthResult"
+                            android:background="#AA999999"
+                            android:padding="12dip"
+                            android:text="Rate"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/totalInterestResult"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/interestResult"
+                            android:background="#AACCCCCC"
+                            android:padding="12dip"
+                            android:text="Total interest"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_below="@id/leaseLayout2">
+
+                    <Button
+                        android:id="@+id/btnBackResult"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OK" android:background="@drawable/buttonevent" android:bufferType="normal" android:textSize="15dip" android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

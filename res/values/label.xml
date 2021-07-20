@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="leasing_month_label">Leasing Months :</string>
+    <string name="continue_button">Continue</string>
+    <string name="back_button">Back</string>
+    <string name="downpayment_label">Down payment(Baht) :</string>
+    <string name="percent_label">Down payment (%) :</string>
+    
+</resources>

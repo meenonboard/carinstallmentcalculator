@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/black">
+    <ScrollView android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_width="wrap_content" android:id="@+id/scrollView1">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/aboutVersionTextView" android:text="@string/version" android:textStyle="bold" android:textSize="30dp"></TextView>
+                <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentLeft="true" android:id="@+id/aboutImageView" android:src="@drawable/logo_mobile" android:layout_below="@+id/aboutVersionTextView"></ImageView>
+                <LinearLayout android:layout_height="wrap_content" android:id="@+id/aboutLinearLayout1" android:layout_below="@+id/aboutImageView" android:layout_width="match_parent" android:layout_marginTop="20dp">
+                    <TextView android:layout_height="wrap_content" android:text="@string/about_1" android:id="@+id/aboutTextView1" android:textSize="18dp" android:layout_width="fill_parent"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:layout_below="@+id/aboutLinearLayout1" android:layout_width="match_parent" android:id="@+id/aboutLinearLayout2" android:layout_marginTop="10dp">
+                    <TextView android:id="@+id/aboutTextView1_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_1_1" android:textSize="18dp"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="match_parent" android:id="@+id/aboutLinearLayout4" android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/aboutLinearLayout2">
+                    <TextView android:id="@+id/aboutTextView1_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_1_2" android:textSize="18dp"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:id="@+id/aboutLinearLayout5" android:layout_width="match_parent" android:layout_below="@+id/aboutLinearLayout4" android:layout_marginTop="10dp">
+                    <TextView android:layout_height="wrap_content" android:text="@string/about_2" android:layout_width="fill_parent" android:textSize="18dp" android:id="@+id/aboutTextView2"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:id="@+id/aboutLinearLayout3" android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/aboutLinearLayout5">
+                    <TextView android:id="@+id/textView4" android:layout_height="wrap_content" android:text="@string/about_honda" android:layout_width="fill_parent" android:textStyle="bold"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:id="@+id/aboutLinearLayout6" android:layout_below="@+id/aboutLinearLayout3" android:layout_width="match_parent">
+                    <TextView android:id="@+id/textView5" android:layout_height="wrap_content" android:text="@string/about_honda_web" android:layout_width="fill_parent"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_width="match_parent" android:id="@+id/aboutLinearLayout8" android:layout_below="@+id/aboutLinearLayout6">
+                    <TextView android:id="@+id/modelLabel" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/about_nissan" android:textStyle="bold"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:id="@+id/aboutLinearLayout9" android:layout_height="wrap_content" android:layout_below="@+id/aboutLinearLayout8">
+                    <TextView android:id="@+id/lblRate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_nissan_web"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:id="@+id/aboutLinearLayout10" android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/aboutLinearLayout9">
+                    <TextView android:id="@+id/lblLeasing" android:layout_height="wrap_content" android:text="@string/about_mazda" android:layout_width="fill_parent" android:textStyle="bold"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_below="@+id/aboutLinearLayout10" android:id="@+id/aboutLinearLayout11">
+                    <TextView android:id="@+id/lblModel" android:layout_height="wrap_content" android:text="@string/about_mazda_web" android:layout_width="fill_parent"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/aboutLinearLayout18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_below="@id/aboutLinearLayout11" android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_ford" android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/aboutLinearLayout19"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:layout_below="@id/aboutLinearLayout18">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_ford_web"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/toyotaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aboutLinearLayout19"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblFullPrice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_toyota" android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/toyotaLinkLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toyotaLayout"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lblDownPayment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_toyota_web"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/isuzuLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:layout_below="@id/toyotaLinkLayout">
+
+                    <TextView
+                        android:id="@+id/lblMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_isuzu" android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/isuzuLinkLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_below="@id/isuzuLayout">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_isuzu_web" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chevroletLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@id/isuzuLinkLayout">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_chevrolet" android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chevroletLinkLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_below="@id/chevroletLayout">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_chevrolet_web" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mitsubishiLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@id/chevroletLinkLayout">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_mitsubishi" android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mitsubishiLinkLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_below="@id/mitsubishiLayout">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_mitsubishi_web" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/suzukiLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_below="@id/mitsubishiLinkLayout" android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_suzuki" android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/suzukiLinkLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_below="@id/suzukiLayout">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_suzuki_web" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hyundaiLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_below="@id/suzukiLinkLayout" android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_hyundai" android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hyundaiLinkLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_below="@id/hyundaiLayout">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_hyundai_web" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kiaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@id/hyundaiLinkLayout">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_kia" android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kiaLinkLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_below="@id/kiaLayout">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_kia_web" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/protonLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kiaLinkLayout"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_proton_thai"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/protonLinkLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/protonLayout" >
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_proton_thai_web" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/aboutLinearLayout22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/protonLinkLayout"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/aboutImageRight"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_image_right"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:id="@+id/aboutLinearLayout7" android:layout_marginTop="20dp" android:layout_height="wrap_content" android:layout_below="@+id/aboutLinearLayout22">
+                    <TextView android:id="@+id/aboutTextView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_3" android:textSize="18dp"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_below="@+id/aboutLinearLayout7" android:layout_marginTop="20dp" android:id="@+id/aboutLinearLayout12">
+                    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/about_4" android:textSize="18dp" android:id="@+id/aboutTextView4"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:id="@+id/aboutLinearLayout13" android:layout_below="@+id/aboutLinearLayout12" android:layout_width="match_parent">
+                    <TextView android:id="@+id/textView8" android:layout_height="wrap_content" android:text="@string/about_5" android:layout_width="fill_parent"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="10dp" android:layout_height="wrap_content" android:id="@+id/aboutLinearLayout16" android:layout_width="match_parent" android:layout_below="@+id/aboutLinearLayout13">
+                    <TextView android:text="@string/font_support" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/aboutTextView5" android:textSize="18dp"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="wrap_content" android:id="@+id/aboutLinearLayout14" android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/aboutLinearLayout16">
+                    <TextView android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_6"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="match_parent" android:id="@+id/aboutLinearLayout15" android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/aboutLinearLayout14">
+                    <TextView android:id="@+id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_8"></TextView>
+                </LinearLayout>
+                <LinearLayout android:layout_height="match_parent" android:id="@+id/aboutLinearLayout17" android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_below="@+id/aboutLinearLayout15"></LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

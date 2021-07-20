@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brand_datasource">http://202.170.120.223/~programm/PonRod/Data/Brand.xml</string>
+    <string name="ads_datasource">http://202.170.120.223/~programm/PonRod/Ads/Ads.xml</string>
+    
+</resources>

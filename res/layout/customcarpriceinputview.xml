@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:background="@color/black">
+   <ScrollView android:layout_width="wrap_content" android:id="@+id/scrollView1" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/customImageDisplayLayout">
+
+            <TextView
+                android:id="@+id/customModelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#FF6600"
+                android:text="@string/custom_calculation"
+                android:textColor="@color/white"
+                android:textSize="20dp" android:gravity="center_vertical">
+</TextView>
+            <TextView android:layout_height="wrap_content" android:id="@+id/lblModel" android:layout_width="match_parent" android:layout_marginTop="2dp" android:textSize="2dp" android:background="@color/white" android:layout_below="@+id/customModelText" android:layout_alignLeft="@+id/customModelText"></TextView>
+            <LinearLayout android:layout_height="wrap_content" android:layout_below="@+id/lblModel" android:layout_width="match_parent" android:id="@+id/linearLayout2" android:background="@drawable/textbox_bg">
+
+                <TextView
+                    android:id="@+id/lblRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/series_price"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" android:layout_marginLeft="20dp" android:gravity="center_vertical">
+
+</TextView>
+                <EditText android:layout_height="wrap_content" android:id="@+id/customSalePrice" android:layout_width="match_parent" android:inputType="numberDecimal" android:hint="200000" android:visibility="visible" android:layout_marginTop="3dp"></EditText>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout3" android:layout_below="@+id/linearLayout2" android:background="@drawable/textbox_bg">
+
+                <TextView
+                    android:id="@+id/lblLeasing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/down_payment_select"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" android:layout_marginLeft="20dp" android:layout_marginTop="15dp">
+
+</TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_below="@+id/linearLayout3" android:id="@+id/linearLayout4" android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@drawable/textbox_bg">
+                <RadioGroup
+			      android:layout_width="match_parent"
+			      android:layout_height="wrap_content"
+			      android:orientation="horizontal" android:gravity="center_vertical|center_horizontal">
+                <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/percent" android:checked="true" android:id="@+id/customRadioPercent"></RadioButton>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/amount" android:id="@+id/customRadioAmount"></RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:layout_below="@+id/linearLayout4" android:id="@+id/linearLayout5" android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@drawable/textbox_bg" android:gravity="center_vertical|center_horizontal">
+                <RelativeLayout android:layout_height="match_parent" android:id="@+id/relativeLayout1" android:layout_width="wrap_content">
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="invisible" android:hint="200000" android:inputType="numberDecimal" android:id="@+id/customAmountDown" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="3dp"></EditText>
+                    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/customPercentSpin" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="3dp"></Spinner>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_below="@+id/linearLayout5" android:id="@+id/linearLayout6" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_width="match_parent" android:background="@drawable/textbox_bg" android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/month"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" android:layout_marginLeft="20dp">
+
+</TextView>
+                <Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/customMonthSpin" android:layout_marginRight="10dp" android:layout_marginTop="2dp"></Spinner>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearLayout8" android:layout_below="@+id/linearLayout6" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_centerVertical="true" android:background="@drawable/textbox_bg" android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interest_rate"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" android:layout_marginLeft="20dp">
+
+</TextView>
+                <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="2.75" android:inputType="numberDecimal" android:id="@+id/customInterest_value" android:layout_marginRight="10dp" android:layout_marginTop="2dp"></EditText>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout7" android:layout_height="wrap_content" android:layout_below="@+id/linearLayout8" android:layout_marginTop="10dp">
+                <Button android:layout_width="match_parent" android:text="Calculate" android:layout_height="35dp" android:id="@+id/customCalculateBtn" android:background="@drawable/buttonevent" android:textColor="@color/white"></Button>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="price_left_padding">10dp</dimen>
+    <dimen name="logo_left_padding">10dp</dimen>
+    <dimen name="logo_right_padding">10dp</dimen>
+</resources>

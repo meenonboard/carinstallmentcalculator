@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.PonRod"
+      android:versionCode="15"
+      android:versionName="1.6.2"
+      android:installLocation="auto">
+    <uses-sdk android:minSdkVersion="8"/>
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true" android:enabled="true">
+        <activity android:name=".PonRodHome"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenuView"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CarModelList"
+                  android:label="@string/choose_brand"
+                  android:screenOrientation="portrait">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+  		<activity android:name=".ModelModelList"
+                  android:label="@string/choose_model"
+                  android:screenOrientation="portrait">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SeriesModelView"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name="About"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name="CustomCalculateModelView"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+         <activity android:name="BrandListClass"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+         <activity android:name="BrandModelListClass"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+          <activity android:name="BrandSeriesListClass"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+         <activity android:name="BrandSummaryClass"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+                  <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="true"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+</manifest>
